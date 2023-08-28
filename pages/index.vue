@@ -1,11 +1,10 @@
 <template>
-  <Tutorial />
+  <div class="text-xl py-2">
+    <div>Welcome to my website!</div>
+    <div>In here you can save and share your notes.</div>
+    <div>Soon!</div>
+  </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-
-export default Vue.extend({
-  name: 'IndexPage',
-})
+<script>
 </script>
