@@ -21,7 +21,8 @@ interface Note {
   id: string,
   title: string,
   content: string,
-  categories: string[]
+  categories: string[],
+  private: boolean
 }
 
 export default {
