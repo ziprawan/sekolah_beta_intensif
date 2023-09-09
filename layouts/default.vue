@@ -1,10 +1,14 @@
 <template>
-  <div id="app" class="p-4">
-    <WebHeader />
+  <div id="app" class="bg-primary">
+    <div class="relative min-h-[100vh]">
+      <WebHeader />
 
-    <Nuxt />
+      <div class="text-xl px-[20px] md:px-[100px] xl:px-[150px] gap-10 pt-[108px] pb-[36px] relative">
+        <Nuxt />
+      </div>
 
-    <WebFooter />
+      <WebFooter />
+    </div>
   </div>
 </template>
 
