@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* 
+.notes-move {
+  transition: .5s;
+} */
+
+.notes-enter-active,
+.notes-leave-active {
+  transition: all 0.5s ease;
+}
+
+/* .notes-enter-from, */
+.notes-leave-to {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+.notes-enter {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+.notes-enter-to {
+  opacity: 1;
+  /* transform: translateX(100px); */
+}

@@ -3,8 +3,8 @@
     <div class="flex justify-between">
       <div>
         Filter category:
-        <select id="filter" v-model="filterQuery" class="p-1 rounded-md" name="title">
-          <option value="" selected></option>
+        <select id="filter" v-model="filterQuery" class="p-2 rounded-md" name="title">
+          <option value="" selected>Select category</option>
           <option 
             v-for="category in Array.from(new Set(notes.map(n => n.categories).flat()))" 
             :key="category"
@@ -67,7 +67,13 @@
         </form>
       </div>
     </div>
-    <NotesCard v-for="(note, i) in filterNotes" :key="i" :note="note" />
+    <TransitionGroup name="notes" tag="div" class="relative">
+      <NotesCard 
+        v-for="note in filterNotes" 
+        :key="note.id" 
+        :note="note" 
+      />
+    </TransitionGroup>
   </div>
 </template>
 
