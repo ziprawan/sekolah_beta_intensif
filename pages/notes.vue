@@ -6,7 +6,7 @@
         <select id="filter" v-model="filterQuery" class="p-2 rounded-md" name="title">
           <option value="" selected>Select category</option>
           <option 
-            v-for="category in Array.from(new Set(notes.map(n => n.categories).flat()))" 
+            v-for="category in Array.from(new Set(notes.filter(n => n.private === privateOnly).flatMap(n => n.categories)))" 
             :key="category"
             :value="category"
           >{{ category }}</option>
