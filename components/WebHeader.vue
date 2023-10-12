@@ -4,7 +4,7 @@
     <div class="flex text-xl items-center space-x-5 justify-between">
       <div><a href="/">Home</a></div>
       <div><a href="/notes">Notes</a></div>
-      <div><a href="/tools">Tools</a></div>
+      <div><a href="/other">Other</a></div>
     </div>
     <!-- <div class="hover:bg-[#FF9000] bg-slate-200 text-slate-900 transition hover:text-white font-semibold px-5 py-3 rounded-full font-poppins">Login</div> -->
     <div class="w-12 h-12 rounded-full overflow-hidden">
